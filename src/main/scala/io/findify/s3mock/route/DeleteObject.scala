@@ -2,7 +2,7 @@ package io.findify.s3mock.route
 
 import akka.http.scaladsl.model.{HttpResponse, StatusCodes}
 import akka.http.scaladsl.server.Directives._
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 import io.findify.s3mock.error.NoSuchKeyException
 import io.findify.s3mock.provider.Provider
 

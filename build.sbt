@@ -1,6 +1,6 @@
 name := "s3mock"
 
-version := "0.1.10"
+version := "0.1.10.1"
 
 organization := "io.findify"
 
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % "test",
   "org.scala-lang.modules" %% "scala-xml" % "1.0.6",
   "com.github.pathikrit" %% "better-files" % "2.17.1",
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
+  "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2",
   "com.amazonaws" % "aws-java-sdk-s3" % "1.11.104",
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
   "ch.qos.logback" % "logback-classic" % "1.2.1" % "test",
@@ -32,11 +32,11 @@ parallelExecution in Test := false
 publishMavenStyle := true
 
 publishTo := {
-  val nexus = "https://oss.sonatype.org/"
+  val nexus = "https://nexus.ci.data-platform.io:8082/"
   if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
+    Some("snapshots" at nexus + "repository/dpp-snapshot")
   else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+    Some("releases"  at nexus + "repository/dpp-release")
 }
 
 pomExtra := (

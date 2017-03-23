@@ -10,7 +10,7 @@ import akka.http.scaladsl.model.{HttpHeader, HttpResponse, Multipart, StatusCode
 import akka.http.scaladsl.server.Directives._
 import akka.stream.scaladsl.{Framing, Sink}
 import akka.util.ByteString
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 import io.findify.s3mock.error.NoSuchKeyException
 import io.findify.s3mock.provider.{FileProvider, Provider}
 import io.findify.s3mock.request.{CompleteMultipartUpload, CreateBucketConfiguration}

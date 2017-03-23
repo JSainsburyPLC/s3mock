@@ -5,7 +5,7 @@ import java.util
 import akka.http.scaladsl.model.{HttpRequest, HttpResponse, StatusCodes}
 import akka.http.scaladsl.server.Directives._
 import com.amazonaws.services.s3.model.ObjectMetadata
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 import io.findify.s3mock.error.{InternalErrorException, NoSuchBucketException, NoSuchKeyException}
 import io.findify.s3mock.provider.Provider
 

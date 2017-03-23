@@ -6,7 +6,7 @@ import akka.http.scaladsl.model.DateTime
 import better.files.File
 import better.files.File.OpenOptions
 import com.amazonaws.services.s3.model.ObjectMetadata
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 import io.findify.s3mock.error.{NoSuchBucketException, NoSuchKeyException}
 import io.findify.s3mock.provider.metadata.{MapMetadataStore, MetadataStore}
 import io.findify.s3mock.request.{CompleteMultipartUpload, CreateBucketConfiguration}

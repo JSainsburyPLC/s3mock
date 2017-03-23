@@ -14,7 +14,7 @@ import com.amazonaws.services.s3.Headers
 import com.amazonaws.services.s3.internal.ServiceUtils
 import com.amazonaws.services.s3.model.ObjectMetadata
 import com.amazonaws.util.{DateUtils, StringUtils}
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 import io.findify.s3mock.S3ChunkedProtocolStage
 import io.findify.s3mock.error.{InternalErrorException, NoSuchBucketException}
 import io.findify.s3mock.provider.Provider

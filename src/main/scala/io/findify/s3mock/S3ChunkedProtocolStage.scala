@@ -4,7 +4,7 @@ import akka.stream._
 import akka.stream.scaladsl.{Flow, GraphDSL}
 import akka.stream.stage.{GraphStage, GraphStageLogic, InHandler, OutHandler}
 import akka.util.ByteString
-import com.typesafe.scalalogging.LazyLogging
+import com.typesafe.scalalogging.slf4j.LazyLogging
 
 import scala.util.matching.Regex
 
