@@ -1,6 +1,6 @@
 name := "s3mock"
 
-version := "0.1.10.1"
+version := "0.1.10.1-SNAPSHOT"
 
 organization := "io.findify"
 
@@ -32,7 +32,7 @@ parallelExecution in Test := false
 publishMavenStyle := true
 
 publishTo := {
-  val nexus = "https://nexus.ci.data-platform.io:8082/"
+  val nexus = "http://nexus.ci.data-platform.io:8082/"
   if (isSnapshot.value)
     Some("snapshots" at nexus + "repository/dpp-snapshot")
   else
